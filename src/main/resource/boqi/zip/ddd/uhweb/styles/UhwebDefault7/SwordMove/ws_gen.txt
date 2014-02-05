@@ -1,0 +1,4 @@
+G:\lib\axis-bin-1_4\axis-1_4\webapps\axis\WEB-INF\lib>java -Djava.ext.dirs=G:\li
+b\axis-bin-1_4\axis-1_4\webapps\axis\WEB-INF\lib org.apache.axis.wsdl.WSDL2Java
+-oG:\lib\axis-bin-1_4\axis-1_4\webapps\axis\WEB-INF\lib -pserver.SayHello http:/
+/localhost/uapws/service/bq.ws.demo.Demo1?wsdl
