@@ -106,6 +106,7 @@ public class RegexDemo {
 		// 2) 25[0-5]
 		// 3) 24[0-9]
 		String regex = "^([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\.([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\.([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\.([01]?\\d\\d?|2[0-4]\\d|25[0-5])$";
+		// String regex = "([01]?\\d\\d?|2[0-4]\\d|25[0-5])(\\.([01]?\\d\\d?|2[0-4]\\d|25[0-5])){3}";
 		assertTrue(Pattern.matches(regex, "255.255.255.255"));
 		assertTrue(Pattern.matches(regex, "1.1.1.1"));
 		assertTrue(Pattern.matches(regex, "127.0.0.1"));
