@@ -42,6 +42,7 @@ public class AtomCounter {
 		Counter badCounter = new Counter();
 		AtomCounter goodCounter = new AtomCounter();
 
+		// run 20 tasks synchronizedly and compare the difference between thread-safe and un-thread-safe counter 
 		for(int i = 0; i < 20; i++) {
 			pool.scheduleAtFixedRate(
 					()-> {
