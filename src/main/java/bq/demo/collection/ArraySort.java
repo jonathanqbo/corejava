@@ -2,6 +2,8 @@ package bq.demo.collection;
 
 import java.util.Arrays;
 
+import org.junit.Test;
+
 /**
  * <b>  </b>
  *
@@ -17,6 +19,7 @@ public class ArraySort {
 	/**
 	 * quick sort
 	 */
+	@Test
 	public void test(){
 		int[] a = new int[100];
 		for(int i = 0; i < a.length; i++){
@@ -27,6 +30,9 @@ public class ArraySort {
 		new TestUtil().printArray(a);
 		
 		Arrays.sort(a);
+		
+		System.out.println("after sort:");
+		new TestUtil().printArray(a);
 	}
 	
 }

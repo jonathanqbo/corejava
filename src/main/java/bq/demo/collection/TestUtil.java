@@ -14,7 +14,14 @@ public class TestUtil {
 
 	public void printArray(Object[] a){
 		for(int i = 0; i < a.length; i++)
-			System.out.print(a);
+			System.out.print(a[i]);
+		
+		System.out.println();
+	}
+	
+	public void printArray(int[] a) {
+		for(int i = 0; i < a.length; i++)
+			System.out.print(a[i] + ", ");
 		
 		System.out.println();
 	}

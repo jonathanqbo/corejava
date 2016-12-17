@@ -12,10 +12,17 @@ import java.math.BigDecimal;
  * <p> NOTE: use {@link BigDecimal#BigDecimal(String)} instead of {@link BigDecimal#BigDecimal(double)}, 
  * otherwise will get precision issue.
  * </p>
+ * 
+ * <p> NOTE:
+ * <li>Don’t use float and double on monetary calculation.
+ * <li>Use BigDecimal, long or int for monetary calculation.
+ * <li>Use BigDecimal with String constructor and avoid double one.
+ * <li>Don’t use floating point result for comparing loop conditions.
+ * </p>
  *
  * @author Jonathan.q.bo@gmail.com
  *
- * Create at 4:19:38 PM Dec 9, 2016
+ * @since Create at 4:19:38 PM Dec 9, 2016
  * 
  */
 
