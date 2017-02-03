@@ -40,6 +40,29 @@ import org.junit.Test;
  *
  */
 public class ArrayToList {
+	
+	/**
+	 * Example output:
+	 * 
+	 * [I@675d3402,
+	 * 1,2,3,4,5,6,7,8,
+	 */
+	@Test
+	public void primitiveToList() {
+		// NOTE: for primitive array, Arrays.asList will treat whole array as one element of List
+		int[] array = {1, 2, 3, 4, 5, 6,7 ,8};
+		List<int[]> list = Arrays.asList(array);
+		list.forEach(v -> System.out.print(v + ","));
+		System.out.println();
+		
+		// for Object array, Arrays.asList will work as expected
+		Integer[] array2 = { 1, 2, 3, 4, 5, 6, 7, 8 };
+		List<Integer> list2 = Arrays.asList(array2);
+		list2.forEach(v -> System.out.print(v + ","));
+		System.out.println();
+		//list2.forEach(System.out::println);
+		
+	}
 
 	@Test
 	public void tranformArrayToList(){
