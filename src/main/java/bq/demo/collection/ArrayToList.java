@@ -61,7 +61,6 @@ public class ArrayToList {
 		list2.forEach(v -> System.out.print(v + ","));
 		System.out.println();
 		//list2.forEach(System.out::println);
-		
 	}
 
 	@Test
